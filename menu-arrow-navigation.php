@@ -52,21 +52,21 @@ function amwan_settings_init(  ) {
 
 	add_settings_section(
 		'amwan_pluginPage_section', 
-		__( ' ', 'amwan' ), 
+		__( ' ', 'crows-nest-menu-navigation' ), 
 		'amwan_settings_section_callback', 
 		'pluginPage'
 	);
 	
 	add_settings_field( 
 		'amwan_text_field_color', 
-		__( 'Color (hex or rgba) for the popup instructions - default is white', 'amwan' ), 
+		__( 'Color (hex or rgba) for the popup instructions - default is white', 'crows-nest-menu-navigation' ), 
 		'amwan_text_field_color_render', 
 		'pluginPage', 
 		'amwan_pluginPage_section' 
 	);
 	add_settings_field( 
 		'amwan_from_top', 
-		__( 'Distance from top, as absolutely positioned item inside the menu - default is -50px', 'amwan' ), 
+		__( 'Distance from top, as absolutely positioned item inside the menu - default is -50px', 'crows-nest-menu-navigation' ), 
 		'amwan_from_top_render', 
 		'pluginPage', 
 		'amwan_pluginPage_section' 
@@ -74,7 +74,7 @@ function amwan_settings_init(  ) {
 
 	add_settings_field( 
 		'amwan_text_field_primary', 
-		__( 'Primary Menu Items (the first level before anything drops down)', 'amwan' ), 
+		__( 'Primary Menu Items (the first level before anything drops down)', 'crows-nest-menu-navigation' ), 
 		'amwan_text_field_primary_render', 
 		'pluginPage', 
 		'amwan_pluginPage_section' 
@@ -82,7 +82,7 @@ function amwan_settings_init(  ) {
 
 	add_settings_field( 
 		'amwan_text_field_secondary', 
-		__( 'Secondary Menu Items (all of the links in the dropdowns)', 'amwan' ), 
+		__( 'Secondary Menu Items (all of the links in the dropdowns)', 'crows-nest-menu-navigation' ), 
 		'amwan_text_field_secondary_render', 
 		'pluginPage', 
 		'amwan_pluginPage_section' 
@@ -91,7 +91,7 @@ function amwan_settings_init(  ) {
 
 	add_settings_field( 
 		'amwan_text_field_whole_menu', 
-		__( 'Whole Menu (the instructions will pop up above this)', 'amwan' ), 
+		__( 'Whole Menu (the instructions will pop up above this)', 'crows-nest-menu-navigation' ), 
 		'amwan_text_field_whole_menu_render', 
 		'pluginPage', 
 		'amwan_pluginPage_section' 
@@ -99,7 +99,7 @@ function amwan_settings_init(  ) {
 
 	add_settings_field( 
 		'amwan_text_field_main_content', 
-		__( 'Page Main Content (where the skip-navigation link jumps to)', 'amwan' ), 
+		__( 'Page Main Content (where the skip-navigation link jumps to)', 'crows-nest-menu-navigation' ), 
 		'amwan_text_field_main_content_render', 
 		'pluginPage', 
 		'amwan_pluginPage_section' 
@@ -164,7 +164,7 @@ function amwan_text_field_main_content_render(  ) {
 
 function amwan_settings_section_callback(  ) { 
 
-	echo __( 'Fill the following fields in with the appropriate querySelectors (or CSS selectors) to identify the various parts of your menu that are to be navigable by keyboard arrow keys. Make sure these are specific enough to catch only the menu elements indicated.', 'amwan' );
+	echo __( 'Fill the following fields in with the appropriate querySelectors (or CSS selectors) to identify the various parts of your menu that are to be navigable by keyboard arrow keys. Make sure these are specific enough to catch only the menu elements indicated.', 'crows-nest-menu-navigation' );
 }
 
 

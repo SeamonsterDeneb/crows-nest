@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Adds the ability for visitors using keyboard navigation on the site to use the arrow keys while in the menu. 
 
 == Description ==
-Crow's Nest Menu Navigation adds the ability for visitors using keyboard navigation on the site to use the arrow keys while in the menu. Thus, rather than tabbing all the way through all dropdowns to get through the menu, visitors can use the right and left arrows to see what\'s in the dropdowns, and then the down and up arrows to navigate to their desired item.
+Crow's Nest Menu Navigation is a plugin that adds the ability for visitors using keyboard navigation on the site to use the arrow keys while in the menu. Thus, rather than tabbing all the way through all dropdowns to get through the menu, visitors can use the right and left arrows to see what\'s in the dropdowns, and then the down and up arrows to navigate to their desired item.
 
 == Installation ==
 =Prerequisites=
