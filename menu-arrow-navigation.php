@@ -3,7 +3,7 @@
  * Plugin Name: Crow's Nest Menu Navigation
  * Plugin URI: https://www.seamonsterstudios.com/crows-nest-arrow-key-navigation-for-menus/
  * Description: A plugin to add arrow-key navigation to menus
- * Version: 1.1
+ * Version: 1.0.1
  * Author: SeaMonster Studios
  * Author URI: http://www.seamonsterstudios.com
  */
@@ -324,61 +324,61 @@ function amwan_options_page(  ) {
 				}
 			</style>
 			<script>
-				 var expandButton1 = document.querySelector('.first-instruction-image img');
+				var expandButton1 = document.querySelector('.first-instruction-image img');
 				var expandButton2 = document.querySelector('.second-instruction-image img');
 				var expandButton3 = document.querySelector('.third-instruction-image img');
 				var expandButton4 = document.querySelector('.fourth-instruction-image img');
 				expandButton1.addEventListener("click", () => {
-					contractOthers(x='first-instruction-image');
-					expand(x='first-instruction-image');
+					amwan_contractOthers(x='first-instruction-image');
+					amwan_expand(x='first-instruction-image');
 				})
 				expandButton1.addEventListener("keyup", function(event) {
 					event.preventDefault();
 					if (event.keyCode === 13) {
-						contractOthers(x='first-instruction-image');
-						expand(x='first-instruction-image');
+						amwan_contractOthers(x='first-instruction-image');
+						amwan_expand(x='first-instruction-image');
 					}
 				})
 				expandButton2.addEventListener("click", () => {
-					contractOthers(x='second-instruction-image');
-					expand(x='second-instruction-image');
+					amwan_contractOthers(x='second-instruction-image');
+					amwan_expand(x='second-instruction-image');
 				})
 				expandButton2.addEventListener("keyup", function(event) {
 					event.preventDefault();
 					if (event.keyCode === 13) {
-						contractOthers(x='second-instruction-image');
-						expand(x='second-instruction-image');
+						amwan_contractOthers(x='second-instruction-image');
+						amwan_expand(x='second-instruction-image');
 					}
 				})
 				expandButton3.addEventListener("click", () => {
-					contractOthers(x='third-instruction-image');
-					expand(x='third-instruction-image');
+					amwan_contractOthers(x='third-instruction-image');
+					amwan_expand(x='third-instruction-image');
 				})
 				expandButton3.addEventListener("keyup", function(event) {
 					event.preventDefault();
 					if (event.keyCode === 13) {
-						contractOthers(x='third-instruction-image');
-						expand(x='third-instruction-image');
+						amwan_contractOthers(x='third-instruction-image');
+						amwan_expand(x='third-instruction-image');
 					}
 				})
 				expandButton4.addEventListener("click", () => {
-					contractOthers(x='fourth-instruction-image');
-					expand(x='fourth-instruction-image');
+					amwan_contractOthers(x='fourth-instruction-image');
+					amwan_expand(x='fourth-instruction-image');
 				})
 				expandButton4.addEventListener("keyup", function(event) {
 					event.preventDefault();
 					if (event.keyCode === 13) {
-						contractOthers(x='fourth-instruction-image');
-						expand(x='fourth-instruction-image');
+						amwan_contractOthers(x='fourth-instruction-image');
+						amwan_expand(x='fourth-instruction-image');
 					}
 				})
-				function contractOthers(x) {
+				function amwan_contractOthers(x) {
 					var expanded = document.querySelectorAll(".expand:not(#"+x+")");
 					expanded.forEach(element=>{
 						element.classList.remove("expand");
 					});
 				}
-				function expand(x) {
+				function amwan_expand(x) {
 					var lightbox = document.getElementById(x);
 					lightbox.classList.toggle("expand");
 				}
