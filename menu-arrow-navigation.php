@@ -3,7 +3,7 @@
  * Plugin Name: Crow's Nest Menu Navigation
  * Plugin URI: https://www.seamonsterstudios.com/crows-nest-arrow-key-navigation-for-menus/
  * Description: A plugin to add arrow-key navigation to menus
- * Version: 1.0
+ * Version: 1.1
  * Author: SeaMonster Studios
  * Author URI: http://www.seamonsterstudios.com
  */
@@ -111,7 +111,7 @@ function amwan_text_field_primary_render(  ) {
 
 	$options = get_option( 'amwan_settings' );
 	?>
-	<input type='text' name='amwan_settings[amwan_text_field_primary]' value='<?php echo $options['amwan_text_field_primary']; ?>'>
+	<input type='text' name='amwan_settings[amwan_text_field_primary]' value='<?php echo esc_html($options['amwan_text_field_primary']); ?>'>
 	<?php
 }
 
@@ -119,7 +119,7 @@ function amwan_text_field_secondary_render(  ) {
 
 	$options = get_option( 'amwan_settings' );
 	?>
-	<input type='text' name='amwan_settings[amwan_text_field_secondary]' value='<?php echo $options['amwan_text_field_secondary']; ?>'>
+	<input type='text' name='amwan_settings[amwan_text_field_secondary]' value='<?php echo esc_html($options['amwan_text_field_secondary']); ?>'>
 
 	<?php
 }
@@ -129,7 +129,7 @@ function amwan_text_field_color_render(  ) {
 
 	$options = get_option( 'amwan_settings' );
 	?>
-	<input type='text' name='amwan_settings[amwan_text_field_color]' value='<?php echo $options['amwan_text_field_color']; ?>'>
+	<input type='text' name='amwan_settings[amwan_text_field_color]' value='<?php echo esc_html($options['amwan_text_field_color']); ?>'>
 
 	<?php
 }
@@ -138,7 +138,7 @@ function amwan_from_top_render(  ) {
 
 	$options = get_option( 'amwan_settings' );
 	?>
-	<input type='text' name='amwan_settings[amwan_from_top]' value='<?php echo $options['amwan_from_top']; ?>'>
+	<input type='text' name='amwan_settings[amwan_from_top]' value='<?php echo esc_html($options['amwan_from_top']); ?>'>
 
 	<?php
 }
@@ -148,7 +148,7 @@ function amwan_text_field_whole_menu_render(  ) {
 
 	$options = get_option( 'amwan_settings' );
 	?>
-	<input type='text' name='amwan_settings[amwan_text_field_whole_menu]' value='<?php echo $options['amwan_text_field_whole_menu']; ?>'>
+	<input type='text' name='amwan_settings[amwan_text_field_whole_menu]' value='<?php echo esc_html($options['amwan_text_field_whole_menu']); ?>'>
 	<?php
 }
 
@@ -157,7 +157,7 @@ function amwan_text_field_main_content_render(  ) {
 
 	$options = get_option( 'amwan_settings' );
 	?>
-	<input type='text' name='amwan_settings[amwan_text_field_main_content]' value='<?php echo $options['amwan_text_field_main_content']; ?>'> 
+	<input type='text' name='amwan_settings[amwan_text_field_main_content]' value='<?php echo esc_html($options['amwan_text_field_main_content']); ?>'> 
 	<?php
 }
 
