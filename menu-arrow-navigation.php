@@ -4,6 +4,7 @@
  * Plugin URI: https://www.seamonsterstudios.com/crows-nest-arrow-key-navigation-for-menus/
  * Description: A plugin to add arrow-key navigation to menus
  * Version: 1.0.1
+ * Text Domain: crows-nest-menu-navigation
  * Author: SeaMonster Studios
  * Author URI: http://www.seamonsterstudios.com
  */
