@@ -9,11 +9,11 @@
  * Author URI: http://www.seamonsterstudios.com
  */
  
-function menu_arrow_navigation_scripts_and_styles() {
+function amwan_menu_arrow_navigation_scripts_and_styles() {
     wp_enqueue_style('menu-arrow-navigation-styles', plugin_dir_url(__FILE__) . 'menu-arrow-navigation-styles.css');
     wp_enqueue_script('menu-arrow-navigation-script', plugin_dir_url(__FILE__) . 'menu-arrow-navigation-script.js', array('jquery'), '1.0', true);
 }
-add_action('wp_enqueue_scripts', 'menu_arrow_navigation_scripts_and_styles');
+add_action('wp_enqueue_scripts', 'amwan_menu_arrow_navigation_scripts_and_styles');
 
 function amwan_variables() {
 	
