@@ -43,7 +43,7 @@ add_action( 'admin_init', 'amwan_settings_init' );
 
 function amwan_add_admin_menu(  ) { 
 
-	add_menu_page( "Crow's Nest", "Menu Setup", "manage_options", "accessible_menu_with_arrow_navigation", "amwan_options_page", "dashicons-universal-access-alt" );
+	add_menu_page( "Crow's Nest", "Menu Setup", "manage_options", "crows-nest-menu-navigation", "amwan_options_page", "dashicons-universal-access-alt" );
 }
 
 
